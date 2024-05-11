@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this  how seo can be achieved-->
+    <meta name="description" content="this is the description">
+    <meta name="keyword" content="html, html tutorial, web developement">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Document</title>
+    <!-- This is how css used externally-->
+    <link rel="stylesheets" href=".css">
+    <!-- This is how javascript used externally-->
+    <script src=".js"></script> 
+</head>
+<body>
+    <!--inline and block element 
+    inline elements are those element take the area for the whole width
+    else take a block surrounding the element is block
+css can be used to convert inline to block-->
+
+    <p style="color: steelblue;">Lorem ipsum&nbsp; dolor sit amet consectetur adipisicing elit. 
+        Nobis quod quos quis aliquid mollitia unde, est neque repellendus molestiae necessitatibus
+        <hr>
+         minima earum provident eligendi expedita totam, magni aperiam dolorem voluptatibus.</p>
+    
+         <p>Lorem ipsum dolor&#8203; sit amet consectetur adipisicing elit.&lt;&gt;
+             Porro debitis molestiae odit molestias nam repellendus suscipit blanditiis? &rAarr;
+             Laudantium possimus debitis delectus nostrum tenetur.&euro;
+             &copy;&frac14;
+         </p>
+         <hr>
+         <a href="https://www.google.com" >google</a>
+         <a href="https://www.twitter.com" target="_blank" >twitter</a> <!-- target blank leads to opening of new window for link-->
+         <hr>
+         <img src=".png" alt="error"><!--alternative if image not visible  and don't set w&h from here-->
+         <hr>
+         <ul>
+            <li>unordered list</li>
+            <li>unordered list</li>
+            <li>unordered list</li>
+         </ul>
+<br>
+         <ol>
+            <li>ordered list</li>
+            <li>ordered list</li>
+            <li>ordered list</li>
+         </ol>
+         <ol type="I">
+            <li>ordered list</li>
+            <li>ordered list</li>
+            <li>ordered list</li>
+         </ol>
+         <ol type="i">
+            <li>ordered list</li>
+            <li>ordered list</li>
+            <li>ordered list</li>
+         </ol>
+         <ol type="a">
+            <li>ordered list</li>
+            <li>ordered list</li>
+            <li>ordered list</li>
+         </ol>
+         <ol type="A">
+            <li>ordered list</li>
+            <li>ordered list</li>
+            <li>ordered list</li>
+         </ol>
+<hr>
+         <!--tables-->
+         <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>expertise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Html</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+			        <td>JavaS</td>
+		            <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>789</td>
+                    <td>Css</td>
+                    <td>CSS</td>
+                </tr>
+            </tbody>
+         </table>
+         <!--inputs and form-->
+         <hr>
+         <form action="backend.php">
+            <label for="name"></label>
+            <div>
+               Name: <input type="text" name="myName">
+            </div><br>
+            <div> 
+               Expertise :<input type="text" name="myExpertise"> 
+            </div><br>
+            <div>
+                email : <input type="email" name="myMail">
+            </div><br>
+            <div>
+                date : <input type="date" name="myDate">
+            </div><br>
+            <div>
+                number : <input type="number" name="myNumber">
+            </div><br>
+            <div>
+                eligiblity : <input type="checkbox" name="myEligiblity"> 18yrs and above
+            </div><br>
+            <div>
+                <label for="car"></label>
+                <select name="myCar" id="car">
+                    <option value="ind">Indica</option>
+                    <option value="swift">Swift</option>
+                    <option value="none">NO Car </option>
+                </select>   
+            </div><br>
+            <div>
+                Gender : Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> 
+                            Other<input type="radio" name="myGender">
+            </div><br>
+            <div>
+                Write about yourself:<br> <textarea name="myText" cols="90" rows="10"></textarea>
+            </div><br>
+            <div>
+                <input type="submit" value="submit now"> <input type="reset" value="reset form">
+            </div><br>
+            </form>
+            <hr><!--id and class-->
+            <div id="mainBox" class="redBG blackBorder"><!-- Space is required to change name of class / id is unique for each class-->
+            </div>
+            <span class="redBG"></span>
+            <div class="redBG blackBorder anotherClass"></div>
+            <span class="myClass myClass1 myClass2">first</span>
+            <span class="myClass myClass1 myClass2">second</span>
+            <span class="myClass myClass1 myClass2">third</span>
+            <span class="myClass myClass1 myClass2">fourt</span>
+
+</body>
+</html>

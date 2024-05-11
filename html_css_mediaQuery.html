@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        body{
+            background-color: beige;
+            color: brown;
+        }
+        @media screen and (orientation: landscape){
+            body{
+                border: 4px solid black;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            body{
+                background-color: burlywood;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            height: 144px;
+            width: 344px;
+            background-color: coral;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box box0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quibusdam voluptate maxime eos dolorum!
+    </div>
+    <div class="box box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam fugiat odit esse, doloremque pariatur?
+    </div>
+    <div class="box box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem pariatur dolore, laboriosam laborum optio, quo architecto voluptas quis maxime temporibus dignissimos quibusdam? Nesciunt, eaque reiciendis.
+    </div>
+    <div class="box box3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem pariatur dolore, laboriosam laborum optio, quo architecto voluptas quis maxime temporibus dignissimos quibusdam? Nesciunt, eaque reiciendis.
+    </div>
+    <div class="box box4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem pariatur dolore, laboriosam laborum optio, quo architecto voluptas quis maxime temporibus dignissimos quibusdam? Nesciunt, eaque reiciendis.
+    </div>
+    </div>
+</body>
+</html>

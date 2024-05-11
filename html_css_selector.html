@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+      /*  .boxes:first-child{
+            background-color: bisque;
+        }*/
+        /*.box::first-line{
+            color: brown;
+        }*/
+        /*.boxes *{
+            background-color: bisque;
+            color: brown;
+            border: 2px solid black;
+        }
+        p,a,.box[data-color="primary"]{
+            padding-top:45px;
+        }*/
+        /*
+        .box:nth-child(even){
+            background-color: coral;
+        }
+        .box:nth-child(odd){
+            background-color: chartreuse;
+        }
+        .box:nth-child(3){
+            background-color: rgb(255, 0, 0);
+        }*/
+        .boxes::before{
+            content:"this is life, work hard do not give up." ;
+            color: chartreuse;
+        }
+        .boxes::after{
+            content: "Thank you";
+            color: crimson;
+        }
+        ::selection{
+            background-color: black;
+            color: aquamarine;
+        }
+        .box::first-letter{
+            color: darkgreen;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: darkred;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestias, in non doloremque necessitatibus doloribus adipisci! In, asperiores! Nemo ipsum esse laborum.
+        </div>
+        <div class="box">hey I am a box</div>
+        <div class="box">hey I am a box</div>
+        <input type="text" placeholder="type your name here">
+    </div>
+</body>
+</html>
